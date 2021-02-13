@@ -19,12 +19,24 @@
 
 If you wish to run the server with the executable JAR file, please follow the steps below.
 
-- Open your terminal and go to the directory `\country-rest-api\country-rest-api\target`
+- Open your terminal and go to the  directory `\target`
 - Execute following command 
 ```
 $: java -jar country-rest-api-0.0.1-SNAPSHOT.jar
 ```
 
+
+### Building from source
+
+If you wish to build from source and run, follow the below steps.
+
+- Open your terminal and go to the root directory
+- Execute following commands (Windows)
+  
+```
+$: mvnw clean install
+$: mvnw spring-boot:run
+```
 
 ### Heroku Deployment
 
