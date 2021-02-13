@@ -7,7 +7,7 @@
 
 ## Getting Started
 
-###Executable JAR
+### Executable JAR
 
 If you wish to run the server with the executable JAR file, please follow the steps below.
 
