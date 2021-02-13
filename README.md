@@ -46,6 +46,7 @@ The REST API to this example application is as follows.
 
 `GET /countries/`
 
+---
 
 ## Create a new Country
 
@@ -53,6 +54,7 @@ The REST API to this example application is as follows.
 
 `POST /countries/`
 
+---
 
 ## Get a specific Country
 
@@ -60,6 +62,7 @@ The REST API to this example application is as follows.
 
 `GET /countries/{country_id}`
 
+---
 
 ## Get a non-existent country
 
@@ -70,13 +73,16 @@ The REST API to this example application is as follows.
 
 ### Response
 
-{
+    {
     "timestamp": "2021-02-13T11:24:21.975+00:00",
     "message": "Country not found with ID : 3",
     "status": 404,
     "error": "Not Found",
     "path": "uri=/rest/v2/countries/3"
-}
+    }
+
+---
+
 
 ## Update a Country
 
@@ -92,6 +98,7 @@ The REST API to this example application is as follows.
     "capital":"Sri Jayawardenepura Kotte"
     }
 
+---
 
 ## Attempt to update a country using invalid params
 
@@ -112,13 +119,15 @@ The REST API to this example application is as follows.
 
 ### Response
 
-{
+    {
     "timestamp": "2021-02-13T11:27:54.121+00:00",
     "message": "Country name can not be empty",
     "status": 400,
     "error": "Bad Request",
     "path": "uri=/rest/v2/countries/1"
-}
+    }
+
+---
 
 ## Delete a Country
 
@@ -126,6 +135,7 @@ The REST API to this example application is as follows.
 
 `DELETE /countries/{country_id}`
 
+---
 
 ## Deleting a non existent country
 
@@ -136,10 +146,10 @@ The REST API to this example application is as follows.
 
 ### Response
 
-{
+    {
     "timestamp": "2021-02-13T11:29:17.738+00:00",
     "message": "Country not found with ID : 4",
     "status": 404,
     "error": "Not Found",
     "path": "uri=/rest/v2/countries/4"
-}
+    }
