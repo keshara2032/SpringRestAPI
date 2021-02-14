@@ -21,6 +21,9 @@ public class CountryServiceImplementation implements CountryService {
     @Override
     public Country createCountry(Country country) {
         // Implementation of the method to create a country
+        if(country.getCountry_name().isEmpty())
+            throw new BadRequestException("Country name can not be empty");
+        
         return countryRepo.save(country);
     }
 
