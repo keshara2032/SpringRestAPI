@@ -18,18 +18,21 @@ public class CountryController {
     private CountryService countryService;
 
     // API for requesting all countries
+    @CrossOrigin
     @GetMapping("/countries")
     public ResponseEntity<List<Country>> getAllCountries(){
         return ResponseEntity.ok().body(countryService.getAllCountries());
     }
 
     // API for requesting for a specific country
+    @CrossOrigin
     @GetMapping("/countries/{country_id}")
     public ResponseEntity<Country> getCountry(@PathVariable long country_id){
         return ResponseEntity.ok().body(countryService.getCountryByID(country_id));
     }
 
     // API for creating a country
+    @CrossOrigin
     @PostMapping("/countries")
     public ResponseEntity<Country> createCountry(@RequestBody Country country){
 
@@ -38,6 +41,7 @@ public class CountryController {
     }
 
     // API for updating a country
+    @CrossOrigin
     @PutMapping("/countries/{country_id}")
     public ResponseEntity<Country> updateCountry(@PathVariable long country_id, @Validated @RequestBody Country country){
 
@@ -47,6 +51,7 @@ public class CountryController {
     }
 
     // API for deleting a country
+    @CrossOrigin
     @DeleteMapping("/countries/{country_id}")
     public ResponseEntity<?> deleteCountry(@PathVariable long country_id){
 
