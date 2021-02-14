@@ -30,7 +30,6 @@ public class CountryServiceImplementation implements CountryService {
     @Override
     public Country updateCountry(Country country) {
         // Implementation of the method to update a country
-
         Optional<Country> country_db = this.countryRepo.findById(country.getId());
 
             if(!country_db.isPresent())   throw new ResourceNotFoundException("Country not found with ID : " + country.getId());

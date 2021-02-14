@@ -43,7 +43,7 @@ public class CountryController {
     // API for updating a country
     @CrossOrigin
     @PutMapping("/countries/{country_id}")
-    public ResponseEntity<Country> updateCountry(@PathVariable long country_id, @Validated @RequestBody Country country){
+    public ResponseEntity<Country> updateCountry(@PathVariable long country_id,  @RequestBody Country country){
 
         country.setId(country_id);
         return ResponseEntity.ok().body(this.countryService.updateCountry(country));
@@ -56,8 +56,7 @@ public class CountryController {
     public ResponseEntity<?> deleteCountry(@PathVariable long country_id){
 
             this.countryService.deleteCountry(country_id);
-
-              return new ResponseEntity<>("Deleted country with id : "+country_id, HttpStatus.OK);
+            return ResponseEntity.ok().body(HttpStatus.OK);
 
 
     }
