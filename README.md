@@ -44,27 +44,25 @@ $: mvnw spring-boot:run
 
 If you wish to access the API endpoints online, you can access the server with following address as the base for your API Requests.
 
-```
-https://springboot-rest-demo-app.herokuapp.com/rest/v2/
+`https://springboot-rest-demo-app.herokuapp.com/rest/v2/`
 
-```
-
+---
 
 # REST API 
 
 The REST API to this example application is as follows. If you want a detailed documentation visit Swagger UI using following link
 
-- local server
-```
-http://localhost:8080/swagger-ui/index.html
+- Local server
 
-```
+`http://localhost:8080/swagger-ui/index.html`
+
+---
 
 - Heroku Deployment
-```
-https://springboot-rest-demo-app.herokuapp.com/swagger-ui/index.html
+  
+`https://springboot-rest-demo-app.herokuapp.com/swagger-ui/index.html`
 
-```
+---
 
 ## Get a list of countries
 
