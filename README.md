@@ -4,6 +4,7 @@
 * Springboot
 * H2 Database
 * JPA 
+* Swagger
 
 
 ## Features
@@ -11,6 +12,7 @@
 - Springboot RESTful CRUD Operations
 - Basic Validation
 - Exception Handling
+- Swagger API Documentation
 
 
 ## Getting Started
@@ -50,7 +52,19 @@ https://springboot-rest-demo-app.herokuapp.com/rest/v2/
 
 # REST API 
 
-The REST API to this example application is as follows.
+The REST API to this example application is as follows. If you want a detailed documentation visit Swagger UI using following link
+
+- local server
+```
+http://localhost:8080/swagger-ui/index.html
+
+```
+
+- Heroku Deployment
+```
+https://springboot-rest-demo-app.herokuapp.com/swagger-ui/index.html
+
+```
 
 ## Get a list of countries
 
